@@ -1,15 +1,15 @@
 <template>
-  <el-container class="app" style="height: 100%">
+  <el-container class="app">
     <el-header style="background-color: #F7ECD0;">
       <!-- 引入对应组件 -->
       <Header/>
     </el-header>
-    <el-container style="height: 100%">
-      <el-aside style="background-color: #EC9339; width: 200px">
+    <el-container style="height: auto">
+      <el-aside style="background-color: #EC9339; width: 200px;">
         <!-- 引入对应组件 -->
         <LeftMenu/>
       </el-aside>
-      <el-main style="background-color: #e4dfd7;">
+      <el-main style="background-color: #e4dfd7; flex: 1 1 auto;">
         <!-- 引入对应组件 -->
         <router-view/>
       </el-main>
@@ -33,8 +33,8 @@ html, body, #app {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   /*color: #2c3e50;*/
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
   margin: 0;
   padding: 0;
 }
